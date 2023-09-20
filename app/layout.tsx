@@ -51,7 +51,6 @@ export default function RootLayout({
 							<Link
 								isExternal
 								className="flex items-center gap-1 text-current"
-								// href="#"
 								title="nextui.org homepage"
 							>
 								<span className="text-default-600">ByteMystic</span>
