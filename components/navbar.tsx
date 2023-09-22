@@ -52,6 +52,7 @@ export const Navbar = () => {
 	);
 
 	return (
+			<div style={{background:"#010028"}}>
 		<NextUINavbar maxWidth="xl" position="sticky">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -61,7 +62,7 @@ export const Navbar = () => {
 				</NavbarBrand>
 				<ul className="hidden lg:flex gap-4 justify-start ml-2">
 					{siteConfig.navItems.map((item) => (
-						<NavbarItem key={item.href}>
+						<NavbarItem key={item.href} className="underline hover:underline-offset-4">
 							<NextLink
 								className={clsx(
 									linkStyles({ color: "foreground" }),
@@ -69,7 +70,7 @@ export const Navbar = () => {
 								)}
 								color="foreground"
 								href={item.href}
-							>
+							   >
 								{item.label}
 							</NextLink>
 						</NavbarItem>
@@ -139,5 +140,6 @@ export const Navbar = () => {
 				</div>
 			</NavbarMenu>
 		</NextUINavbar>
+			</div>
 	);
 };
