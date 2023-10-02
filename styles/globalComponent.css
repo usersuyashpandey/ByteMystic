@@ -1,0 +1,11 @@
+.custom-scrollbar::-webkit-scrollbar {
+      width: 8px;
+      /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: gray;
+      /* Color of the scrollbar thumb */
+      border-radius: 4px;
+      /* Rounded corners of the scrollbar thumb */
+}
